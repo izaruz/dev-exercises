@@ -173,3 +173,52 @@ ___
     ~~~
 
 > El proceso no se encuentra activo
+
+___
+
+20. Cree un archivo llamado “curr.html” dentro del directorio psets1.
+
+    ~~~
+    $ touch curr.html
+    ~~~
+
+___
+
+21. Abra su archivo curr.html con EMACS y escriba su currículum en el ( Utilice html ).
+
+    ~~~
+    $ emacs curr.html
+    ~~~
+
+___
+
+22. Cree un zip llamado curr.zip que contenga el archivo curr.html.
+
+    ~~~
+    $ zip curr.zip curr.html
+    ~~~
+
+___
+
+23. Cree un tar que contenga todo la carpeta de psets1, nombre a este tar como psets1.tgz.
+
+    ~~~
+    $ tar -czvf psets1.tar.gz
+    ~~~
+
+> -c crea un nuevo archivo, z comprime el archivo, v verbose output, f indica que utilice el archivo
+___
+
+24. Copie el archivo curr.html a su directorio public_html dentro de home.galileo.edu ( Utilice scp para realizar esto).
+
+    ~~~
+    $ scp curr.html user@galileo.edu:/home/isaac/www/
+    ~~~
+
+___
+
+25. Liste cuales son sus variables de ambiente, con sus respectivos valores.
+
+    ~~~
+    $ printenv
+    ~~~
